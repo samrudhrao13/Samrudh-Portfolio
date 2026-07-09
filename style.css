@@ -360,12 +360,17 @@ ul { list-style: none; }
 }
 
 /* ===== EXPERIENCE ===== */
+.exp-timeline { display: flex; flex-direction: column; gap: 1.5rem; }
+
 .exp-card {
   background: var(--card-bg);
   border: 1px solid var(--border);
   border-radius: 14px;
   padding: 2rem;
+  transition: border-color 0.25s;
 }
+.exp-card:hover { border-color: var(--accent); }
+
 .exp-header {
   display: flex;
   justify-content: space-between;
@@ -374,8 +379,26 @@ ul { list-style: none; }
   flex-wrap: wrap;
   margin-bottom: 1.2rem;
 }
-.exp-header h3 { font-size: 1.2rem; font-weight: 700; margin-bottom: 0.3rem; }
-.exp-company { color: var(--text-muted); font-size: 0.9rem; }
+.exp-title-row { display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 0.3rem; }
+.exp-header h3 { font-size: 1.15rem; font-weight: 700; }
+.exp-company { color: var(--text-muted); font-size: 0.88rem; margin-bottom: 0.25rem; }
+.exp-date { color: var(--text-muted); font-size: 0.82rem; }
+.exp-date i { margin-right: 0.35rem; color: var(--accent2); }
+
+.exp-badge {
+  padding: 0.15rem 0.65rem;
+  border-radius: 20px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.exp-badge.current {
+  background: rgba(0,212,170,0.15);
+  border: 1px solid rgba(0,212,170,0.4);
+  color: var(--accent2);
+}
+
 .exp-tech-stack { display: flex; flex-wrap: wrap; gap: 0.4rem; justify-content: flex-end; }
 .exp-tech-stack span {
   background: rgba(0,212,170,0.1);
@@ -396,6 +419,17 @@ ul { list-style: none; }
 }
 .exp-project ul { padding-left: 1.2rem; list-style: disc; }
 .exp-project li { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.3rem; }
+
+/* location tag */
+.location-tag {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+.location-tag i { color: var(--accent2); }
 
 /* ===== PROJECTS ===== */
 .projects-grid {
@@ -428,6 +462,16 @@ ul { list-style: none; }
   border-radius: 20px;
   font-size: 0.75rem;
   font-weight: 600;
+}
+.project-badge.ongoing {
+  background: rgba(0,212,170,0.12);
+  border-color: rgba(0,212,170,0.35);
+  color: var(--accent2);
+}
+.project-badge.deployed {
+  background: rgba(39,201,63,0.12);
+  border-color: rgba(39,201,63,0.35);
+  color: #27c93f;
 }
 .project-card h3 { font-size: 1.05rem; font-weight: 700; }
 .project-card p { color: var(--text-muted); font-size: 0.88rem; flex: 1; }
@@ -547,6 +591,7 @@ ul { list-style: none; }
   color: var(--text-muted);
 }
 .contact-form .btn { align-self: flex-start; }
+.form-status { font-size: 0.9rem; margin-top: 0.5rem; font-weight: 500; }
 
 /* ===== FOOTER ===== */
 .footer {

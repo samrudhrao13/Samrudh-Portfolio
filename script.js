@@ -7,23 +7,19 @@ window.addEventListener('scroll', () => {
 // Hamburger menu
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.querySelector('.nav-links');
-hamburger.addEventListener('click', () => {
-  navLinks.classList.toggle('open');
-});
+hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
 document.querySelectorAll('.nav-links a').forEach(link => {
   link.addEventListener('click', () => navLinks.classList.remove('open'));
 });
 
 // Typed effect
 const phrases = [
+  'AI Engineer',
   'Full-Stack Developer',
-  'AI/ML Enthusiast',
+  'LLM Integration Specialist',
   'Enterprise App Builder',
-  'Workflow Automation Dev',
 ];
-let phraseIndex = 0;
-let charIndex = 0;
-let isDeleting = false;
+let phraseIndex = 0, charIndex = 0, isDeleting = false;
 const typedEl = document.getElementById('typed');
 
 function type() {
@@ -58,19 +54,38 @@ const observer = new IntersectionObserver(
 );
 fadeEls.forEach(el => { el.classList.add('fade-in'); observer.observe(el); });
 
-// Contact form submit
-document.getElementById('contact-form').addEventListener('submit', e => {
+// Formspree async contact form
+const form = document.getElementById('contact-form');
+const status = document.getElementById('form-status');
+const submitBtn = document.getElementById('submit-btn');
+
+form.addEventListener('submit', async (e) => {
   e.preventDefault();
-  const btn = e.target.querySelector('button');
-  btn.textContent = 'Sent! ✓';
-  btn.style.background = 'var(--accent2)';
-  btn.style.borderColor = 'var(--accent2)';
-  btn.style.color = '#000';
-  setTimeout(() => {
-    btn.innerHTML = 'Send Message <i class="fas fa-paper-plane"></i>';
-    btn.style.cssText = '';
-    e.target.reset();
-  }, 3000);
+  submitBtn.disabled = true;
+  submitBtn.innerHTML = 'Sending... <i class="fas fa-spinner fa-spin"></i>';
+  status.textContent = '';
+
+  const data = new FormData(form);
+  try {
+    const res = await fetch(form.action, {
+      method: 'POST',
+      body: data,
+      headers: { Accept: 'application/json' }
+    });
+    if (res.ok) {
+      status.textContent = '✓ Message sent! I\'ll get back to you soon.';
+      status.style.color = 'var(--accent2)';
+      form.reset();
+    } else {
+      status.textContent = '✗ Something went wrong. Please email me directly.';
+      status.style.color = '#ff5f56';
+    }
+  } catch {
+    status.textContent = '✗ Network error. Please try again.';
+    status.style.color = '#ff5f56';
+  }
+  submitBtn.disabled = false;
+  submitBtn.innerHTML = 'Send Message <i class="fas fa-paper-plane"></i>';
 });
 
 // Active nav link on scroll
