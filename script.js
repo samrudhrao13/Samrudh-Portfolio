@@ -54,39 +54,6 @@ const observer = new IntersectionObserver(
 );
 fadeEls.forEach(el => { el.classList.add('fade-in'); observer.observe(el); });
 
-// Formspree async contact form
-const form = document.getElementById('contact-form');
-const status = document.getElementById('form-status');
-const submitBtn = document.getElementById('submit-btn');
-
-form.addEventListener('submit', async (e) => {
-  e.preventDefault();
-  submitBtn.disabled = true;
-  submitBtn.innerHTML = 'Sending... <i class="fas fa-spinner fa-spin"></i>';
-  status.textContent = '';
-
-  const data = new FormData(form);
-  try {
-    const res = await fetch(form.action, {
-      method: 'POST',
-      body: data,
-      headers: { Accept: 'application/json' }
-    });
-    if (res.ok) {
-      status.textContent = '✓ Message sent! I\'ll get back to you soon.';
-      status.style.color = 'var(--accent2)';
-      form.reset();
-    } else {
-      status.textContent = '✗ Something went wrong. Please email me directly.';
-      status.style.color = '#ff5f56';
-    }
-  } catch {
-    status.textContent = '✗ Network error. Please try again.';
-    status.style.color = '#ff5f56';
-  }
-  submitBtn.disabled = false;
-  submitBtn.innerHTML = 'Send Message <i class="fas fa-paper-plane"></i>';
-});
 
 // Active nav link on scroll
 const sections = document.querySelectorAll('section[id]');

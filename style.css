@@ -591,7 +591,44 @@ ul { list-style: none; }
   color: var(--text-muted);
 }
 .contact-form .btn { align-self: flex-start; }
-.form-status { font-size: 0.9rem; margin-top: 0.5rem; font-weight: 500; }
+
+.fs-success {
+  display: none;
+  background: rgba(0,212,170,0.1);
+  border: 1px solid rgba(0,212,170,0.35);
+  color: var(--accent2);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.fs-success i { margin-right: 0.5rem; }
+[data-fs-success]:not(:empty) { display: block; }
+
+.fs-error {
+  display: none;
+  background: rgba(255,95,86,0.1);
+  border: 1px solid rgba(255,95,86,0.35);
+  color: #ff5f56;
+  border-radius: 8px;
+  padding: 0.75rem 1.25rem;
+  font-size: 0.88rem;
+  margin-bottom: 1rem;
+}
+[data-fs-error]:not(:empty) { display: block; }
+
+.field-error {
+  display: block;
+  color: #ff5f56;
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+  min-height: 1rem;
+}
+
+input[aria-invalid="true"],
+textarea[aria-invalid="true"] {
+  border-color: #ff5f56 !important;
+}
 
 /* ===== FOOTER ===== */
 .footer {
