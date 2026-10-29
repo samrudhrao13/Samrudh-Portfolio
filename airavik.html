@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="assets/airavik-mark.png" />
+  <title>Airavik | Case Study - Samrudh G Rao</title>
+  <meta name="description" content="Airavik: multi-tenant practice management platform for CA and audit firms. Case study by Samrudh G Rao." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="case-study.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <nav class="navbar scrolled">
+    <a href="index.html" class="nav-logo">SGR</a>
+    <ul class="nav-links">
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="index.html#experience">Experience</a></li>
+      <li><a href="index.html#projects">Projects</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <div class="nav-social">
+      <a href="https://github.com/samrudhrao13" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/samrudh-rao-589159257/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu"><i class="fas fa-bars"></i></button>
+  </nav>
+
+  <header class="cs-hero">
+    <div class="cs-wrap cs-hero-inner">
+      <img src="assets/airavik-mark.png" alt="Airavik logo" class="cs-logo logo-tile" />
+      <div>
+      <a href="index.html#projects" class="cs-back"><i class="fas fa-arrow-left"></i> Back to projects</a>
+      <div class="cs-eyebrow">Portfolio case study - Multi-tenant SaaS</div>
+      <h1>Airavik</h1>
+      <p>A practice management platform for chartered accountancy and audit firms: clients, statutory compliance workflows, HR/payroll and firm-wide reporting in one system, replacing spreadsheets and email threads with a structured, auditable workflow.</p>
+      <div class="cs-chips">
+        <span>airavik.web.app</span><span>React 18 - Vite</span><span>Node.js - Express</span><span>Firestore</span><span>Cloud Run</span><span>Live in production</span>
+      </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="cs-sec">
+    <div class="cs-wrap">
+      <h2><small>01</small>Overview</h2>
+      <div class="cs-overview">
+        <div>
+          <p>A full-stack, multi-tenant SaaS platform built for chartered accountancy and audit firms to manage clients, statutory compliance workflows, HR/payroll and firm-wide reporting from one system.</p>
+          <p class="muted">It replaces spreadsheets and email threads with a structured workflow, backed by an immutable audit log and role-based access with granular per-module permissions.</p>
+          <a href="https://airavik.web.app" target="_blank" rel="noopener" class="btn btn-primary cs-cta">Visit airavik.web.app <i class="fas fa-arrow-up-right-from-square"></i></a>
+        </div>
+        <div>
+          <div class="cs-logo-tile"><img src="assets/airavik-logo-full.png" alt="Airavik full logo" /></div>
+          <dl class="cs-facts">
+            <div><dt>Role</dt><dd>Developer</dd></div>
+            <div><dt>Status</dt><dd>Live in production</dd></div>
+            <div><dt>Tenancy</dt><dd>Multi-tenant</dd></div>
+            <div><dt>User roles</dt><dd>3 (Platform / Company Admin / User)</dd></div>
+            <div><dt>Backend region</dt><dd>Cloud Run, asia-south1</dd></div>
+            <div><dt>Live at</dt><dd><a href="https://airavik.web.app" target="_blank" rel="noopener">airavik.web.app</a></dd></div>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-sec">
+    <div class="cs-wrap">
+      <h2><small>02</small>Technical stack</h2>
+      <div class="cs-grid c3">
+        <div class="cs-card">
+          <h3 class="stack-h">Frontend</h3>
+          <div class="cs-tags"><span>React 18</span><span>Vite</span><span>React Router</span></div>
+        </div>
+        <div class="cs-card">
+          <h3 class="stack-h">Backend</h3>
+          <div class="cs-tags"><span>Node.js</span><span>Express (ESM)</span></div>
+        </div>
+        <div class="cs-card">
+          <h3 class="stack-h">Database</h3>
+          <div class="cs-tags"><span>Google Cloud Firestore</span><span>multi-tenant NoSQL</span></div>
+        </div>
+        <div class="cs-card">
+          <h3 class="stack-h">Auth</h3>
+          <div class="cs-tags"><span>Firebase Authentication</span><span>Platform Admin / Company Admin / Company User</span></div>
+        </div>
+        <div class="cs-card">
+          <h3 class="stack-h">Hosting</h3>
+          <div class="cs-tags"><span>Firebase Hosting (frontend)</span><span>Cloud Run (backend, containerized, asia-south1)</span></div>
+        </div>
+        <div class="cs-card">
+          <h3 class="stack-h">Security &amp; testing</h3>
+          <div class="cs-tags"><span>Helmet</span><span>express-rate-limit</span><span>Zod</span><span>Firestore security rules</span><span>SHA-256 hash-chained audit log</span><span>Vitest</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-sec">
+    <div class="cs-wrap">
+      <h2><small>03</small>API &amp; service integrations</h2>
+      <div class="cs-int">
+        <div><span class="ic ic-wide">AUTH</span><div><h3>Firebase Authentication</h3><p>Token-based auth with no server sessions.</p></div></div>
+        <div><span class="ic ic-wide">DRIVE</span><div><h3>Google Drive API</h3><p>Per-client document storage, upload/download and in-app file preview.</p></div></div>
+        <div><span class="ic ic-wide">FIRESTORE</span><div><h3>Google Cloud Firestore</h3><p>Real-time multi-tenant data layer.</p></div></div>
+        <div><span class="ic ic-wide">SMTP</span><div><h3>Gmail SMTP (Nodemailer)</h3><p>Automated compliance emails with an organisation-configurable sender and a fallback secondary account.</p></div></div>
+        <div><span class="ic ic-wide">CRON</span><div><h3>node-cron</h3><p>Scheduled automated document-request emails with a reminder cadence.</p></div></div>
+        <div><span class="ic ic-wide">EXPORT</span><div><h3>pdfkit, SheetJS, exceljs</h3><p>Generated PDF challans, Excel reconciliation reports and data exports.</p></div></div>
+        <div><span class="ic ic-wide">RUN</span><div><h3>Google Cloud Run</h3><p>Containerized backend deployment.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-sec">
+    <div class="cs-wrap">
+      <h2><small>04</small>Key features built</h2>
+      <div class="cs-grid c3">
+        <div class="cs-card"><div class="cs-kicker">Compliance</div><h3>Workflow engine</h3><p>GST, TDS and PT filing tracked through a shared progress-stage pipeline (document checklist, calculation, payment, filing, fee received), generalized across all workflow types.</p></div>
+        <div class="cs-card"><div class="cs-kicker">GST</div><h3>GST reconciliation</h3><p>Parses GSTR-2B and purchase-register Excel workbooks, cross-matches invoices and generates Excel/PDF reconciliation reports.</p></div>
+        <div class="cs-card"><div class="cs-kicker">Clients</div><h3>Client management</h3><p>Statutory registration tracking (GST, PT, ESI, PF, labour license, shops &amp; establishment) with validity-date monitoring.</p></div>
+        <div class="cs-card"><div class="cs-kicker">HR &amp; payroll</div><h3>HR &amp; payroll suite</h3><p>Employee profiles, leave management, itemized reimbursements with multi-bill uploads, geofenced self check-in attendance, payslips and Form 22 muster roll.</p></div>
+        <div class="cs-card"><div class="cs-kicker">Attendance</div><h3>Single day-mark calendar</h3><p>A month-view calendar resolves holidays, weekly-offs, approved leave and attendance into one day-mark engine shared across payroll and reporting, so no two views can disagree.</p></div>
+        <div class="cs-card"><div class="cs-kicker">Audit</div><h3>Immutable audit log</h3><p>Append-only and SHA-256 hash-chained for tamper detection, with full-text search/filtering and CSV/XLSX/PDF/JSON export.</p></div>
+        <div class="cs-card"><div class="cs-kicker">Reporting</div><h3>Reports &amp; analytics</h3><p>Firm-wide compliance status, assignee workload breakdowns and visual charts.</p></div>
+        <div class="cs-card"><div class="cs-kicker">Access</div><h3>Role-based access control</h3><p>Granular permission flags per module (HR access, reimbursement approval, attendance approval) layered on top of organisation-scoped roles.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-sec" id="shots">
+    <div class="cs-wrap">
+      <h2><small>05</small>Product screens</h2>
+      <p class="cs-shots-note">Screens from the live product, shown with demo data. Click a screen to enlarge it.</p>
+      <div class="slider" aria-roledescription="carousel" aria-label="Product screens">
+        <div class="slides">
+          <figure class="slide active" data-title="Sign in" data-desc="Accounts are issued by the company admin, not self-registered. Landing page explains the platform.">
+            <img src="assets/screens/air-login.jpg" alt="Sign in" />
+          </figure>
+          <figure class="slide" data-title="Dashboard" data-desc="Client counts per workflow, quick access to every module, and workflow progress across GST, TDS and PT.">
+            <img src="assets/screens/air-dashboard.jpg" alt="Dashboard" loading="lazy" />
+          </figure>
+          <figure class="slide" data-title="Client management" data-desc="Every client with workflow status, overdue alerts and assigned team members. Search and filter by status, workflow or assignee.">
+            <img src="assets/screens/air-clients.jpg" alt="Client management" loading="lazy" />
+          </figure>
+          <figure class="slide" data-title="Compliance workflow" data-desc="Each filing moves through stages: documents requested, received, calculation, payment, filing, client billing and fee received.">
+            <img src="assets/screens/air-client-workflow.jpg" alt="Compliance workflow" loading="lazy" />
+          </figure>
+          <figure class="slide" data-title="Attendance" data-desc="Daily roster with present, absent, leave and half-day, plus geofenced self check-in settings and a monthly summary.">
+            <img src="assets/screens/air-attendance.jpg" alt="Attendance" loading="lazy" />
+          </figure>
+          <figure class="slide" data-title="Attendance calendar" data-desc="Month view that resolves holidays, weekly-offs, leave and attendance into payable days.">
+            <img src="assets/screens/air-attendance-calendar.jpg" alt="Attendance calendar" loading="lazy" />
+          </figure>
+          <figure class="slide" data-title="Employee profiles" data-desc="Employee master data with role, designation, department and status.">
+            <img src="assets/screens/air-employees.jpg" alt="Employee profiles" loading="lazy" />
+          </figure>
+          <figure class="slide" data-title="Reports and analytics" data-desc="Firm-wide status: clients by workflow, where clients stand by stage, workload per team member and payment pending.">
+            <img src="assets/screens/air-reports.jpg" alt="Reports and analytics" loading="lazy" />
+          </figure>
+          <figure class="slide" data-title="Settings" data-desc="Company-wide configuration for workflows, email schedule, Drive storage, extractor templates and the audit log.">
+            <img src="assets/screens/air-settings.jpg" alt="Settings" loading="lazy" />
+          </figure>
+          <figure class="slide" data-title="Audit log" data-desc="Tamper-evident, hash-chained log with search and filters, exportable as CSV, XLSX, PDF and JSON.">
+            <img src="assets/screens/air-audit-log.jpg" alt="Audit log" loading="lazy" />
+          </figure>
+          <figure class="slide" data-title="First-login profile setup" data-desc="New employees complete their HR profile once, with emergency contact details, before using the app.">
+            <img src="assets/screens/air-onboarding.jpg" alt="First-login profile setup" loading="lazy" />
+          </figure>
+        </div>
+        <div class="slide-caption"><b></b><span></span></div>
+        <div class="dots"><button class="dot active" aria-label="Show screen 1"></button><button class="dot" aria-label="Show screen 2"></button><button class="dot" aria-label="Show screen 3"></button><button class="dot" aria-label="Show screen 4"></button><button class="dot" aria-label="Show screen 5"></button><button class="dot" aria-label="Show screen 6"></button><button class="dot" aria-label="Show screen 7"></button><button class="dot" aria-label="Show screen 8"></button><button class="dot" aria-label="Show screen 9"></button><button class="dot" aria-label="Show screen 10"></button><button class="dot" aria-label="Show screen 11"></button></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="cs-sec" style="border:0;text-align:center;color:var(--text-muted);font-size:0.85rem">
+    <a href="index.html#projects" class="btn btn-primary">&larr; Back to portfolio</a>
+  </footer>
+
+  <script>
+    (function () {
+      var hb = document.getElementById('hamburger'), nl = document.querySelector('.nav-links');
+      if (hb && nl) hb.addEventListener('click', function () { nl.classList.toggle('open'); });
+
+      var slider = document.querySelector('.slider');
+      var slides = [].slice.call(document.querySelectorAll('.slide'));
+      var dots = [].slice.call(document.querySelectorAll('.dot'));
+      var capB = document.querySelector('.slide-caption b'), capS = document.querySelector('.slide-caption span');
+      var idx = 0, timer = null, paused = false;
+      var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      function show(i) {
+        idx = (i + slides.length) % slides.length;
+        slides.forEach(function (s, n) { s.classList.toggle('active', n === idx); });
+        dots.forEach(function (d, n) { d.classList.toggle('active', n === idx); });
+        capB.textContent = slides[idx].dataset.title;
+        capS.textContent = slides[idx].dataset.desc;
+      }
+      function start() { stop(); timer = setInterval(function () { if (!paused) show(idx + 1); }, 2000); }
+      function stop() { if (timer) clearInterval(timer); timer = null; }
+      dots.forEach(function (d, n) { d.addEventListener('click', function () { show(n); start(); }); });
+            show(0); start();
+
+      // Click to enlarge, with the description
+      var box = document.createElement('div');
+      box.className = 'lightbox';
+      box.innerHTML = '<figure><img alt="" /><figcaption><b></b><span></span></figcaption></figure><button aria-label="Close">&times;</button>';
+      document.body.appendChild(box);
+      var big = box.querySelector('img'), lb = box.querySelector('figcaption b'), ld = box.querySelector('figcaption span');
+      function openBox() {
+        var s = slides[idx];
+        big.src = s.querySelector('img').src; big.alt = s.querySelector('img').alt;
+        lb.textContent = s.dataset.title; ld.textContent = s.dataset.desc;
+        box.classList.add('open'); paused = true;
+      }
+      function closeBox() { box.classList.remove('open'); paused = false; }
+      slides.forEach(function (s) { s.addEventListener('click', openBox); });
+      box.addEventListener('click', closeBox);
+      document.addEventListener('keydown', function (ev) { if (ev.key === 'Escape') closeBox(); });
+    })();
+  </script>
+</body>
+</html>
