@@ -3,7 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Samrudh G Rao | AI Engineer & Full-Stack Developer</title>
+  <title>Samrudh G Rao | AI/ML Engineer</title>
+  <meta name="description" content="Samrudh G Rao is an AI/ML Engineer in Bengaluru building LLM-powered products end to end on Google Cloud. See live projects, experience and resume." />
+  <meta name="theme-color" content="#0a0a0f" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Samrudh G Rao | AI/ML Engineer" />
+  <meta property="og:description" content="LLM-powered products, built end to end on Google Cloud. Live projects, experience and resume." />
+  <link rel="canonical" href="https://samrudhrao13.github.io/Samrudh-Portfolio/" />
+  <meta property="og:url" content="https://samrudhrao13.github.io/Samrudh-Portfolio/" />
+  <meta property="og:image" content="https://samrudhrao13.github.io/Samrudh-Portfolio/assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
@@ -16,15 +26,17 @@
     <ul class="nav-links">
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#certifications">Certifications</a></li>
       <li><a href="#contact">Contact</a></li>
+      <li><a href="assets/Samrudh_G_Rao_Resume.pdf" download class="nav-resume">Resume</a></li>
     </ul>
     <div class="nav-social">
-      <a href="https://github.com/samrudhrao13" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/samrudh-rao-589159257/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/samrudhrao13" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/samrudh-rao-589159257/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
       <a href="mailto:samrudhgrao@gmail.com"><i class="fas fa-envelope"></i></a>
     </div>
     <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button>
@@ -32,6 +44,10 @@
 
   <!-- HERO -->
   <section class="hero" id="home">
+    <div class="hero-bg" aria-hidden="true">
+      <span class="orb orb-1"></span><span class="orb orb-2"></span><span class="orb orb-3"></span>
+      <div class="hero-grid"></div>
+    </div>
     <div class="hero-content">
       <p class="hero-greeting">Hi, I'm</p>
       <h1 class="hero-name">Samrudh G Rao</h1>
@@ -39,15 +55,16 @@
         <span class="typed-text" id="typed"></span><span class="cursor">|</span>
       </h2>
       <p class="hero-desc">
-        AI Engineer & Full-Stack Developer with hands-on experience building LLM-integrated applications, computer vision systems, and enterprise workflow automation solutions.
+        AI/ML Engineer with hands-on experience building LLM-integrated applications, computer vision systems, and enterprise workflow automation solutions.
       </p>
       <div class="hero-btns">
         <a href="#projects" class="btn btn-primary">View Projects</a>
         <a href="#contact" class="btn btn-outline">Get in Touch</a>
+        <a href="assets/Samrudh_G_Rao_Resume.pdf" download class="btn btn-outline btn-resume"><i class="fas fa-download"></i> Resume</a>
       </div>
       <div class="hero-social">
-        <a href="https://github.com/samrudhrao13" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/samrudh-rao-589159257/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/samrudhrao13" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/samrudh-rao-589159257/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
         <a href="mailto:samrudhgrao@gmail.com"><i class="fas fa-envelope"></i></a>
         <a href="tel:+919986359969"><i class="fas fa-phone"></i></a>
       </div>
@@ -60,7 +77,7 @@
         </div>
         <pre class="code-body"><span class="kw">const</span> <span class="fn">developer</span> = {
   <span class="key">name</span>: <span class="str">"Samrudh G Rao"</span>,
-  <span class="key">role</span>: <span class="str">"AI Engineer"</span>,
+  <span class="key">role</span>: <span class="str">"AI/ML Engineer"</span>,
   <span class="key">stack</span>: [
     <span class="str">"React"</span>, <span class="str">"Node.js"</span>,
     <span class="str">"Python"</span>, <span class="str">"GROQ"</span>,
@@ -79,45 +96,76 @@
       <div class="about-grid">
         <div class="about-text">
           <p>
-            I'm an AI Engineer & Full-Stack Developer based in Bengaluru, India, with hands-on experience building LLM-integrated applications, computer vision systems, and NLP pipelines. I graduated with a B.E. in Computer Science from Jyothy Institute of Technology (VTU) in June 2026 with a CGPA of 7.7.
+            I'm an AI/ML Engineer in Bengaluru, building LLM-powered products end to end on Google Cloud. B.E. in Computer Science from Jyothy Institute of Technology (VTU), 2026.
           </p>
           <p>
-            Currently at SARN Technologies, I'm building a cloud-native enterprise Workflow Management Platform — integrating GROQ LLaMA for AI-powered SDS scanning and chatbots, deployed on Firebase Hosting and Google Cloud Run.
+            At SARN Technologies I run the operations platform behind sarntech.in and have shipped Sustain Ledger Partners and Airavik to production, plus an OCR and LLM platform for WRV Energy.
           </p>
           <p>
-            Previously interned at Wirtgen Group (A John Deere Company) in Pune, building enterprise apps with the Microsoft Power Platform, and at Vanillakart as a Web Developer building responsive e-commerce interfaces.
-          </p>
-          <p>
-            Outside tech, I'm an NCC Army Wing B & C Certificate holder, Club Services Director at Rotaract Club of JIT, and a core member of the Media & Photography Club.
+            Outside tech: NCC Army Wing B & C Certificate holder, Rotaract Club Services Director, and Media & Photography Club core member.
           </p>
           <div class="hero-social" style="margin-top:1.5rem">
-            <a href="https://github.com/samrudhrao13" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/samrudh-rao-589159257/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/samrudhrao13" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/samrudh-rao-589159257/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
             <a href="mailto:samrudhgrao@gmail.com"><i class="fas fa-envelope"></i></a>
           </div>
           <div class="about-stats">
-            <div class="stat"><span class="stat-num">4+</span><span class="stat-label">Companies</span></div>
-            <div class="stat"><span class="stat-num">7.7</span><span class="stat-label">CGPA</span></div>
-            <div class="stat"><span class="stat-num">6+</span><span class="stat-label">Projects</span></div>
+            <div class="stat"><span class="stat-num">3</span><span class="stat-label">Companies</span></div>
+            <div class="stat"><span class="stat-num">8+</span><span class="stat-label">Projects</span></div>
           </div>
         </div>
-        <div class="about-education">
-          <h3>Education</h3>
-          <div class="edu-timeline">
-            <div class="edu-item">
-              <div class="edu-dot"></div>
-              <div class="edu-info">
-                <h4>B.E. Computer Science & Engineering</h4>
-                <p>Jyothy Institute of Technology, VTU</p>
-                <span class="edu-meta">CGPA: 7.7 &nbsp;|&nbsp; June 2026</span>
-              </div>
+        <div class="about-photo-col">
+          <figure class="about-photo">
+            <img src="assets/profile.jpg" alt="Samrudh G Rao" />
+          </figure>
+          <div class="about-photo-meta">
+            <span class="about-photo-name">Samrudh G Rao</span>
+            <span class="location-tag"><i class="fas fa-map-marker-alt"></i> Bengaluru, India</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section section-alt" id="education">
+    <div class="container">
+      <h2 class="section-title">My <span>Education</span></h2>
+      <div class="edu-h">
+        <div class="edu-h-track"><div class="edu-h-fill"></div></div>
+        <div class="edu-h-items">
+
+          <div class="edu-h-item">
+            <div class="edu-h-year">Schooling</div>
+            <div class="edu-h-dot"></div>
+            <div class="edu-h-card">
+              <div class="edu-h-logo"><img src="assets/edu-prarthana.png" alt="Prarthana School logo" /></div>
+              <h4>Prarthana Education Society</h4>
+              <p>Prarthana School &nbsp;&middot;&nbsp; CBSE</p>
             </div>
           </div>
-          <h3 style="margin-top:2rem">Location</h3>
-          <div class="location-tag">
-            <i class="fas fa-map-marker-alt"></i>
-            <span>Bengaluru, Karnataka, India</span>
+
+          <div class="edu-h-item">
+            <div class="edu-h-year">2020 &ndash; 2022</div>
+            <div class="edu-h-dot"></div>
+            <div class="edu-h-card">
+              <div class="edu-h-logo"><img src="assets/edu-base.png" alt="BASE PU College logo" /></div>
+              <h4>Sadhana PU College</h4>
+              <p>BASE Integrated &nbsp;&middot;&nbsp; PCMB</p>
+            </div>
           </div>
+
+          <div class="edu-h-item">
+            <div class="edu-h-year">2022 &ndash; 2026</div>
+            <div class="edu-h-dot"></div>
+            <div class="edu-h-card">
+              <div class="edu-h-logo"><img src="assets/edu-jyothy.png" alt="Jyothy Institute of Technology logo" /></div>
+              <h4>Jyothy Institute of Technology</h4>
+              <p>B.E. Computer Science &amp; Engineering, VTU</p>
+              <span class="edu-meta">Graduated June 2026</span>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
@@ -129,45 +177,57 @@
       <h2 class="section-title">Technical <span>Skills</span></h2>
       <div class="skills-grid">
         <div class="skill-card">
-          <div class="skill-icon"><i class="fas fa-brain"></i></div>
-          <h3>AI / ML</h3>
+          <h3><i class="fas fa-brain skill-h-ico"></i>AI / ML</h3>
           <div class="skill-tags">
-            <span>LLM Integration</span><span>OpenAI API</span><span>Groq API</span><span>NLP</span><span>Computer Vision</span><span>YOLOv5</span><span>PyTorch</span><span>Face Recognition</span><span>AI Reporting</span><span>AI Output Validation</span>
+            <span>LLM Integration</span><span><img src="assets/icons/openai.svg" alt="" class="sk-ico" loading="lazy" />OpenAI API</span><span><img src="assets/icons/groq.svg" alt="" class="sk-ico" loading="lazy" />Groq API</span><span>Llama 3.3</span><span>NLP</span><span>Computer Vision</span><span><img src="assets/icons/googlecloud.svg" alt="" class="sk-ico" loading="lazy" />OCR (Google Cloud Vision)</span><span><img src="assets/icons/yolo.svg" alt="" class="sk-ico" loading="lazy" />YOLOv5</span><span><img src="assets/icons/pytorch.svg" alt="" class="sk-ico" loading="lazy" />PyTorch</span><span><img src="assets/icons/opencv.svg" alt="" class="sk-ico" loading="lazy" />OpenCV</span><span>Face Recognition</span><span>AI Reporting</span><span>AI Output Validation</span>
           </div>
         </div>
         <div class="skill-card">
-          <div class="skill-icon"><i class="fas fa-vial"></i></div>
-          <h3>Testing & QA</h3>
+          <h3><i class="fas fa-vial skill-h-ico"></i>Testing &amp; QA</h3>
           <div class="skill-tags">
-            <span>Manual Testing</span><span>Functional Testing</span><span>Regression Testing</span><span>Usability Testing</span><span>Test Case Execution</span><span>Defect Identification</span><span>Defect Tracking</span><span>Documentation</span>
+            <span>Manual Testing</span><span>Functional Testing</span><span>Regression Testing</span><span>Usability Testing</span><span>Test Case Execution</span><span>Defect Identification</span><span>Defect Tracking</span><span>Documentation</span><span><img src="assets/icons/postman.svg" alt="" class="sk-ico" loading="lazy" />Postman</span><span><img src="assets/icons/vitest.svg" alt="" class="sk-ico" loading="lazy" />Vitest</span>
           </div>
         </div>
         <div class="skill-card">
-          <div class="skill-icon"><i class="fas fa-code"></i></div>
-          <h3>Languages</h3>
+          <h3><i class="fas fa-code skill-h-ico"></i>Languages</h3>
           <div class="skill-tags">
-            <span>Python</span><span>JavaScript</span><span>SQL</span><span>C</span>
+            <span><img src="assets/icons/python.svg" alt="" class="sk-ico" loading="lazy" />Python</span><span><img src="assets/icons/javascript.svg" alt="" class="sk-ico" loading="lazy" />JavaScript</span><span><img src="assets/icons/typescript.svg" alt="" class="sk-ico" loading="lazy" />TypeScript</span><span>SQL</span><span><img src="assets/icons/c.svg" alt="" class="sk-ico" loading="lazy" />C</span><span><img src="assets/icons/html5.svg" alt="" class="sk-ico" loading="lazy" />HTML</span><span><img src="assets/icons/css3.svg" alt="" class="sk-ico" loading="lazy" />CSS</span>
           </div>
         </div>
         <div class="skill-card">
-          <div class="skill-icon"><i class="fas fa-layer-group"></i></div>
-          <h3>Frameworks</h3>
+          <h3><i class="fas fa-layer-group skill-h-ico"></i>Frontend &amp; Mobile</h3>
           <div class="skill-tags">
-            <span>React.js</span><span>Node.js</span><span>Express.js</span><span>Python Flask</span><span>Flutter</span><span>OpenCV</span>
+            <span><img src="assets/icons/react.svg" alt="" class="sk-ico" loading="lazy" />React.js</span><span><img src="assets/icons/nextjs.svg" alt="" class="sk-ico" loading="lazy" />Next.js</span><span><img src="assets/icons/vite.svg" alt="" class="sk-ico" loading="lazy" />Vite</span><span><img src="assets/icons/tailwindcss.svg" alt="" class="sk-ico" loading="lazy" />Tailwind CSS</span><span><img src="assets/icons/bootstrap.svg" alt="" class="sk-ico" loading="lazy" />Bootstrap</span><span><img src="assets/icons/jquery.svg" alt="" class="sk-ico" loading="lazy" />jQuery</span><span><img src="assets/icons/reactrouter.svg" alt="" class="sk-ico" loading="lazy" />React Router</span><span><img src="assets/icons/flutter.svg" alt="" class="sk-ico" loading="lazy" />Flutter</span><span><img src="assets/icons/expo.svg" alt="" class="sk-ico" loading="lazy" />React Native / Expo</span><span><img src="assets/icons/capacitor.svg" alt="" class="sk-ico" loading="lazy" />Capacitor (Android)</span>
           </div>
         </div>
         <div class="skill-card">
-          <div class="skill-icon"><i class="fas fa-database"></i></div>
-          <h3>Databases</h3>
+          <h3><i class="fas fa-server skill-h-ico"></i>Backend &amp; APIs</h3>
           <div class="skill-tags">
-            <span>Firestore</span><span>MongoDB</span><span>MySQL</span><span>MS SQL Server</span>
+            <span><img src="assets/icons/nodejs.svg" alt="" class="sk-ico" loading="lazy" />Node.js</span><span><img src="assets/icons/express.svg" alt="" class="sk-ico" loading="lazy" />Express.js</span><span><img src="assets/icons/fastapi.svg" alt="" class="sk-ico" loading="lazy" />FastAPI</span><span><img src="assets/icons/flask.svg" alt="" class="sk-ico" loading="lazy" />Python Flask</span><span><img src="assets/icons/pydantic.svg" alt="" class="sk-ico" loading="lazy" />Pydantic</span><span><img src="assets/icons/sqlalchemy.svg" alt="" class="sk-ico" loading="lazy" />SQLAlchemy</span><span><img src="assets/icons/jwt.svg" alt="" class="sk-ico" loading="lazy" />JWT Auth</span><span>REST APIs</span><span>Nodemailer</span><span>node-cron</span><span>PDF &amp; Excel generation</span>
           </div>
         </div>
         <div class="skill-card">
-          <div class="skill-icon"><i class="fas fa-cloud"></i></div>
-          <h3>Cloud & Tools</h3>
+          <h3><i class="fas fa-database skill-h-ico"></i>Databases</h3>
           <div class="skill-tags">
-            <span>Firebase Hosting</span><span>Google Cloud Run</span><span>AWS</span><span>Docker</span><span>GitHub</span><span>Figma</span><span>Postman</span>
+            <span><img src="assets/icons/firebase.png" alt="" class="sk-ico" loading="lazy" />Firestore</span><span><img src="assets/icons/mongodb.svg" alt="" class="sk-ico" loading="lazy" />MongoDB</span><span><img src="assets/icons/mysql.svg" alt="" class="sk-ico" loading="lazy" />MySQL</span><span><img src="assets/icons/mssql.svg" alt="" class="sk-ico" loading="lazy" />MS SQL Server 2025</span><span><img src="assets/icons/sqlite.svg" alt="" class="sk-ico" loading="lazy" />SQLite</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3><i class="fas fa-cloud skill-h-ico"></i>Cloud &amp; DevOps</h3>
+          <div class="skill-tags">
+            <span><img src="assets/icons/googlecloud.svg" alt="" class="sk-ico" loading="lazy" />Google Cloud Run</span><span><img src="assets/icons/firebase.png" alt="" class="sk-ico" loading="lazy" />Firebase Hosting &amp; Auth</span><span><img src="assets/icons/aws.svg" alt="" class="sk-ico" loading="lazy" />AWS</span><span><img src="assets/icons/docker.svg" alt="" class="sk-ico" loading="lazy" />Docker</span><span><img src="assets/icons/github.svg" alt="" class="sk-ico" loading="lazy" />GitHub</span><span><img src="assets/icons/googledrive.svg" alt="" class="sk-ico" loading="lazy" />Google Drive API</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3><i class="fab fa-microsoft skill-h-ico"></i>Microsoft Power Platform</h3>
+          <div class="skill-tags">
+            <span><img src="assets/icons/powerapps.svg" alt="" class="sk-ico" loading="lazy" />Power Apps</span><span><img src="assets/icons/powerautomate.svg" alt="" class="sk-ico" loading="lazy" />Power Automate</span><span><img src="assets/icons/sharepoint.svg" alt="" class="sk-ico" loading="lazy" />SharePoint</span><span><img src="assets/icons/powerbi.svg" alt="" class="sk-ico" loading="lazy" />Power BI</span><span><img src="assets/icons/mssql.svg" alt="" class="sk-ico" loading="lazy" />MS SQL Server 2025</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3><i class="fas fa-plug skill-h-ico"></i>Tools &amp; AI Assistants</h3>
+          <div class="skill-tags">
+            <span><img src="assets/icons/whatsapp.svg" alt="" class="sk-ico" loading="lazy" />WhatsApp Cloud API</span><span><img src="assets/icons/formspree.svg" alt="" class="sk-ico" loading="lazy" />Formspree</span><span><img src="assets/icons/gmail.svg" alt="" class="sk-ico" loading="lazy" />Gmail SMTP</span><span><img src="assets/icons/googlesheets.svg" alt="" class="sk-ico" loading="lazy" />Google Sheets</span><span><img src="assets/icons/googlemaps.svg" alt="" class="sk-ico" loading="lazy" />Google Maps</span><span><img src="assets/icons/searchconsole.svg" alt="" class="sk-ico" loading="lazy" />Search Console / SEO</span><span><img src="assets/icons/figma.svg" alt="" class="sk-ico" loading="lazy" />Figma</span><span><img src="assets/icons/claude.svg" alt="" class="sk-ico" loading="lazy" />Claude Code</span><span>Antigravity</span><span><img src="assets/icons/openai.svg" alt="" class="sk-ico" loading="lazy" />Codex</span>
           </div>
         </div>
       </div>
@@ -183,33 +243,50 @@
         <!-- SARN Current -->
         <div class="exp-card">
           <div class="exp-header">
-            <div>
+            <div class="exp-main">
+              <img src="assets/sarn-logo.png" alt="SARN Technologies logo" class="exp-logo" />
+              <div>
               <div class="exp-title-row">
-                <h3>AI Engineer & Full-Stack Developer</h3>
+                <h3>AI/ML Engineer</h3>
                 <span class="exp-badge current">Current</span>
               </div>
               <p class="exp-company">SARN Technologies Pvt. Ltd. &nbsp;·&nbsp; Full-time &nbsp;·&nbsp; Bengaluru, India</p>
               <p class="exp-date"><i class="fas fa-calendar-alt"></i> May 2026 – Present &nbsp;·&nbsp; On-site</p>
+              </div>
             </div>
             <div class="exp-tech-stack">
-              <span>React 18</span><span>Node.js</span><span>Python Flask</span><span>Groq LLaMA</span><span>Firestore</span><span>Firebase Hosting</span><span>Google Cloud Run</span><span>JWT</span>
+              <span>React 18</span><span>Node.js</span><span>Python Flask</span><span>FastAPI</span><span>Groq LLaMA</span><span>Firestore</span><span>Firebase Hosting</span><span>Google Cloud Run</span><span>JWT</span>
             </div>
           </div>
+          <p class="exp-summary">Employed full-time as an AI/ML Engineer. I design, build and run the company's internal platform and client-facing products, from LLM-powered document processing to multi-tenant SaaS, and support them in production on Google Cloud.</p>
           <div class="exp-projects">
             <div class="exp-project">
-              <h4>Workflow Management Platform</h4>
+              <h4>Operations Platform (sarntech.in)</h4>
               <ul>
-                <li>Built and deployed a cloud-native, role-based Workflow Management Platform replacing fragmented spreadsheet-driven document workflows with a real-time, auditable system across SDS, DQ, and Batch processing pipelines.</li>
-                <li>Built the full-stack platform with React 18 + Vite frontend, Node.js + Express backend, and Google Firestore real-time database.</li>
-                <li>Implemented JWT role-based access control, in-app team chat, Google Meet integration, and one-click Excel audit trail exports.</li>
-                <li>Deployed on Firebase Hosting (global CDN) and Google Cloud Run (serverless, asia-south1).</li>
+                <li>Run the platform behind the company's daily work: three document workflows (SLA/SDS, Data Queue, Batch) covering 13,000+ records, plus an HR suite for 40+ users.</li>
+                <li>React 18 and Node.js/Express on three Google Cloud Run services, with Firestore, JWT role-based access and Firebase Hosting.</li>
+                <li>Cut Firestore read volume with TTL caching and automated Google Drive archival.</li>
               </ul>
             </div>
             <div class="exp-project">
-              <h4>AI-Powered SDS Scanner Microservice</h4>
+              <h4>AI-Powered SDS Scanner &amp; Assistant</h4>
               <ul>
-                <li>Developed an AI-powered SDS Scanner microservice using Python Flask + GROQ LLaMA for automated PDF field extraction and GHS pictogram detection.</li>
-                <li>Integrated a GROQ-powered AI chatbot for SDS content translation and PDF Q&A for encrypted PDF files.</li>
+                <li>Python Flask microservice using Groq LLaMA to extract fields and detect GHS pictograms from SDS PDFs.</li>
+                <li>Chatbot for SDS translation and Q&amp;A on encrypted PDFs. AI output is checked by hand, with regression checks after each integration change.</li>
+              </ul>
+            </div>
+            <div class="exp-project">
+              <h4>Sustain Ledger Partners (client product)</h4>
+              <ul>
+                <li>Multi-tenant GST invoicing SaaS with a FastAPI backend, React web app and native Android app, serving several independent companies.</li>
+                <li>Own it end to end: API design, deployment on Cloud Run and ongoing production support.</li>
+              </ul>
+            </div>
+            <div class="exp-project">
+              <h4>Airavik (client product)</h4>
+              <ul>
+                <li>Multi-tenant practice-management platform for CA and audit firms: GST, TDS and PT compliance workflows, GST reconciliation, HR/payroll and a tamper-evident audit log.</li>
+                <li>React 18 and Node.js/Express on Cloud Run with Firestore and Firebase Auth, live in production.</li>
               </ul>
             </div>
           </div>
@@ -218,13 +295,16 @@
         <!-- Wirtgen -->
         <div class="exp-card">
           <div class="exp-header">
-            <div>
+            <div class="exp-main">
+              <img src="assets/wirtgen-logo.png" alt="Wirtgen Group logo" class="exp-logo" />
+              <div>
               <h3>Software Development & Digitalization Intern</h3>
               <p class="exp-company">Wirtgen Group (A John Deere Company) &nbsp;·&nbsp; Internship &nbsp;·&nbsp; Pune, India</p>
               <p class="exp-date"><i class="fas fa-calendar-alt"></i> Jan 2026 – May 2026 &nbsp;·&nbsp; 5 mos &nbsp;·&nbsp; On-site</p>
+              </div>
             </div>
             <div class="exp-tech-stack">
-              <span>React.js</span><span>Node.js</span><span>Firebase</span><span>MS SQL Server</span><span>Power Apps</span><span>Power Automate</span><span>SharePoint</span>
+              <span>React.js</span><span>Node.js</span><span>Firebase</span><span>MS SQL Server 2025</span><span>Power Apps</span><span>Power Automate</span><span>SharePoint</span>
             </div>
           </div>
           <p class="exp-summary">Worked within the Customer Support & Digitalization team to develop enterprise applications, automate workflows, support CRM operations, and contribute to digital transformation initiatives.</p>
@@ -259,10 +339,13 @@
         <!-- SARN Intern -->
         <div class="exp-card">
           <div class="exp-header">
-            <div>
+            <div class="exp-main">
+              <img src="assets/sarn-logo.png" alt="SARN Technologies logo" class="exp-logo" />
+              <div>
               <h3>Full-Stack Developer Intern</h3>
               <p class="exp-company">SARN Technologies Pvt. Ltd. &nbsp;·&nbsp; Internship &nbsp;·&nbsp; Bengaluru, India</p>
               <p class="exp-date"><i class="fas fa-calendar-alt"></i> Jul 2025 – Dec 2025 &nbsp;·&nbsp; 6 mos &nbsp;·&nbsp; Hybrid</p>
+              </div>
             </div>
             <div class="exp-tech-stack">
               <span>React.js</span><span>Node.js</span><span>Firebase</span>
@@ -281,10 +364,13 @@
         <!-- Vanillakart -->
         <div class="exp-card">
           <div class="exp-header">
-            <div>
+            <div class="exp-main">
+              <img src="assets/vanillakart-logo.png" alt="Vanillakart logo" class="exp-logo" />
+              <div>
               <h3>Web Developer Intern</h3>
               <p class="exp-company">Vanillakart &nbsp;·&nbsp; Internship &nbsp;·&nbsp; Bengaluru, India</p>
               <p class="exp-date"><i class="fas fa-calendar-alt"></i> May 2024 – Nov 2025 &nbsp;·&nbsp; 1 yr 7 mos &nbsp;·&nbsp; Remote</p>
+              </div>
             </div>
             <div class="exp-tech-stack">
               <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Bootstrap</span><span>jQuery</span>
@@ -312,18 +398,68 @@
       <h2 class="section-title">Featured <span>Projects</span></h2>
       <div class="projects-grid">
 
-        <div class="project-card">
+        <div class="project-card project-card-link">
           <div class="project-top">
-            <i class="fas fa-sitemap project-icon"></i>
+            <img src="assets/sustain-ledger-icon.png" alt="Sustain Ledger Partners logo" class="project-logo" />
             <div class="project-links">
-              <span class="project-badge ongoing">Ongoing</span>
+              <span class="project-badge deployed">Live in production</span>
             </div>
           </div>
-          <h3>SARN Workflow Management Platform</h3>
-          <p>Cloud-native, role-based platform replacing fragmented spreadsheet workflows with a real-time auditable system. Includes AI-powered SDS Scanner (GROQ LLaMA), PDF Q&A chatbot, team chat, Google Meet integration, one-click Excel audit exports, and manual validation of AI-generated outputs for accuracy and consistency, with regression checks after each integration update.</p>
+          <h3><a href="sustain-ledger.html" class="card-stretch">Sustain Ledger Partners</a></h3>
+          <a href="https://sustainledger.in" target="_blank" rel="noopener" class="project-domain"><i class="fas fa-globe"></i> sustainledger.in</a>
+          <p>Multi-tenant, GST-compliant invoicing SaaS for Indian businesses, built solo end to end: FastAPI backend, React web app and native Android app on Google Cloud.</p>
           <div class="project-tags">
-            <span>React 18</span><span>Node.js</span><span>Firestore</span><span>Python Flask</span><span>Groq LLaMA</span><span>Cloud Run</span><span>JWT</span>
+            <span>FastAPI</span><span>React 18</span><span>Capacitor</span><span>Firestore</span><span>Cloud Run</span>
           </div>
+          <span class="project-more">View case study <i class="fas fa-arrow-right"></i></span>
+        </div>
+
+        <div class="project-card project-card-link">
+          <div class="project-top">
+            <img src="assets/sarn-logo.png" alt="SARN Technologies logo" class="project-logo" />
+            <div class="project-links">
+              <span class="project-badge deployed">Live in production</span>
+            </div>
+          </div>
+          <h3><a href="sarn-platform.html" class="card-stretch">SARN Technologies Platform</a></h3>
+          <a href="https://sarntech.in" target="_blank" rel="noopener" class="project-domain"><i class="fas fa-globe"></i> sarntech.in</a>
+          <p>Operations platform running an entire SDS compliance company: document-processing workflows (13,000+ records) and a full HR suite, built solo on Node.js, React and Google Cloud Run.</p>
+          <div class="project-tags">
+            <span>React 18</span><span>Node.js</span><span>Firestore</span><span>Cloud Run</span><span>Groq LLM</span>
+          </div>
+          <span class="project-more">View case study <i class="fas fa-arrow-right"></i></span>
+        </div>
+
+        <div class="project-card project-card-link">
+          <div class="project-top">
+            <img src="assets/airavik-mark.png" alt="Airavik logo" class="project-logo logo-tile" />
+            <div class="project-links">
+              <span class="project-badge deployed">Live in production</span>
+            </div>
+          </div>
+          <h3><a href="airavik.html" class="card-stretch">Airavik: Practice Management for CA Firms</a></h3>
+          <a href="https://airavik.web.app" target="_blank" rel="noopener" class="project-domain"><i class="fas fa-globe"></i> airavik.web.app</a>
+          <p>Multi-tenant SaaS for chartered accountancy and audit firms: statutory compliance workflows, GST reconciliation, HR/payroll and an immutable audit log in one system.</p>
+          <div class="project-tags">
+            <span>React 18</span><span>Node.js</span><span>Firestore</span><span>Cloud Run</span><span>Firebase Auth</span>
+          </div>
+          <span class="project-more">View case study <i class="fas fa-arrow-right"></i></span>
+        </div>
+
+        <div class="project-card project-card-link">
+          <div class="project-top">
+            <img src="assets/wrv-mark.png" alt="WRV Energy logo" class="project-logo" />
+            <div class="project-links">
+              <span class="project-badge deployed">Website live</span>
+            </div>
+          </div>
+          <h3><a href="wrv-energy.html" class="card-stretch">WRV Energy: IoT Monitoring Platform</a></h3>
+          <a href="https://wrvenergy.com" target="_blank" rel="noopener" class="project-domain"><i class="fas fa-globe"></i> wrvenergy.com</a>
+          <p>Multi-asset monitoring platform that reads utility bills and equipment displays with OCR and an LLM, plus the company's live website.</p>
+          <div class="project-tags">
+            <span>FastAPI</span><span>Next.js 14</span><span>Expo</span><span>Cloud Vision</span><span>Llama 3.3</span>
+          </div>
+          <span class="project-more">View case study <i class="fas fa-arrow-right"></i></span>
         </div>
 
         <div class="project-card">
@@ -392,22 +528,22 @@
       <h2 class="section-title">Certifications & <span>Leadership</span></h2>
       <div class="cert-grid">
         <div class="cert-card">
-          <div class="cert-icon">☁️</div>
+          <div class="cert-icons"><img src="assets/logo-aws.png" alt="AWS logo" class="badge-logo" /></div>
           <h4>AWS Academy Graduate</h4>
           <p>Cloud Developing — Amazon Web Services (2025)</p>
         </div>
         <div class="cert-card">
-          <div class="cert-icon">🤖</div>
+          <div class="cert-icons"><img src="assets/logo-microsoft.png" alt="Microsoft logo" class="badge-logo" /></div>
           <h4>Career Essentials in Generative AI</h4>
           <p>Microsoft (May 2024)</p>
         </div>
         <div class="cert-card">
-          <div class="cert-icon">🧠</div>
+          <div class="cert-icons"><img src="assets/logo-linkedin.png" alt="LinkedIn logo" class="badge-logo" /></div>
           <h4>Introduction to Artificial Intelligence</h4>
           <p>LinkedIn Learning</p>
         </div>
         <div class="cert-card">
-          <div class="cert-icon">📋</div>
+          <div class="cert-icons"><img src="assets/logo-linkedin.png" alt="LinkedIn logo" class="badge-logo" /></div>
           <h4>Agile Project Management</h4>
           <p>LinkedIn Learning</p>
         </div>
@@ -415,21 +551,21 @@
 
       <div class="leadership-grid">
         <div class="lead-item">
-          <i class="fas fa-users"></i>
+          <div class="lead-icons"><img src="assets/logo-rotaract.png" alt="Rotaract Club of JIT logo" class="badge-logo" /></div>
           <div>
             <h4>Club Services Director</h4>
             <p>Rotaract Club of JIT</p>
           </div>
         </div>
         <div class="lead-item">
-          <i class="fas fa-camera"></i>
+          <div class="lead-icons"><img src="assets/logo-aakarshana.png" alt="Team Aakarshana logo" class="badge-logo" /></div>
           <div>
             <h4>Core Member</h4>
             <p>Team Aakarshana — Media & Photography Club</p>
           </div>
         </div>
         <div class="lead-item">
-          <i class="fas fa-shield-alt"></i>
+          <div class="lead-icons"><img src="assets/logo-ncc.png" alt="NCC logo" class="badge-logo" /></div>
           <div>
             <h4>NCC Army Wing</h4>
             <p>B & C Certificate Holder &nbsp;·&nbsp; Oct 2022 – Oct 2025</p>
@@ -443,7 +579,7 @@
   <section class="section section-alt" id="contact">
     <div class="container">
       <h2 class="section-title">Get In <span>Touch</span></h2>
-      <p class="contact-intro">I'm open to new opportunities. Whether you have a question or just want to say hi, feel free to reach out!</p>
+      <p class="contact-intro">Have a question or just want to say hi? Feel free to reach out.</p>
       <div class="contact-grid">
         <div class="contact-info">
           <div class="contact-item">
@@ -464,14 +600,14 @@
             <i class="fab fa-linkedin"></i>
             <div>
               <h4>LinkedIn</h4>
-              <a href="https://www.linkedin.com/in/samrudh-rao-589159257/" target="_blank">samrudh-rao-589159257</a>
+              <a href="https://www.linkedin.com/in/samrudh-rao-589159257/" target="_blank" rel="noopener">samrudh-rao-589159257</a>
             </div>
           </div>
           <div class="contact-item">
             <i class="fab fa-github"></i>
             <div>
               <h4>GitHub</h4>
-              <a href="https://github.com/samrudhrao13" target="_blank">samrudhrao13</a>
+              <a href="https://github.com/samrudhrao13" target="_blank" rel="noopener">samrudhrao13</a>
             </div>
           </div>
           <div class="contact-item">
@@ -513,8 +649,8 @@
   <footer class="footer">
     <p>Designed & Built by <span>Samrudh G Rao</span></p>
     <div class="footer-social">
-      <a href="https://github.com/samrudhrao13" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/samrudh-rao-589159257/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/samrudhrao13" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/samrudh-rao-589159257/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
       <a href="mailto:samrudhgrao@gmail.com"><i class="fas fa-envelope"></i></a>
     </div>
   </footer>
