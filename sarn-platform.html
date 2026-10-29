@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="assets/sarn-logo.png" />
+  <title>SARN Technologies Platform | Case Study - Samrudh G Rao</title>
+  <meta name="description" content="SARN Technologies Platform: operations platform for an SDS compliance company. Case study by Samrudh G Rao." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="case-study.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <nav class="navbar scrolled">
+    <a href="index.html" class="nav-logo">SGR</a>
+    <ul class="nav-links">
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="index.html#experience">Experience</a></li>
+      <li><a href="index.html#projects">Projects</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <div class="nav-social">
+      <a href="https://github.com/samrudhrao13" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/samrudh-rao-589159257/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu"><i class="fas fa-bars"></i></button>
+  </nav>
+
+  <header class="cs-hero">
+    <div class="cs-wrap cs-hero-inner">
+      <img src="assets/sarn-logo.png" alt="SARN Technologies logo" class="cs-logo" />
+      <div>
+      <a href="index.html#projects" class="cs-back"><i class="fas fa-arrow-left"></i> Back to projects</a>
+      <div class="cs-eyebrow">Portfolio case study - Full-stack, solo build</div>
+      <h1>SARN Technologies Platform</h1>
+      <p>The operations platform running an entire SDS compliance company: three document-processing workflows and a full HR suite, with role-scoped dashboards, automated document archival and scheduled reporting. Designed, built and operated end to end.</p>
+      <div class="cs-chips">
+        <span>sarntech.in</span><span>Node.js - Express</span><span>React 18 - Vite</span><span>Firestore</span><span>Cloud Run</span><span>Live in production</span>
+      </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="cs-sec">
+    <div class="cs-wrap">
+      <h2><small>01</small>Overview</h2>
+      <div class="cs-overview">
+        <div>
+          <p>The internal system sarntech.in runs on day to day: three document-processing workflows (SLA/SDS, Data Queue, Batch) and a full HR suite (attendance, leave, payroll, reimbursements), serving SuperAdmin, Admin and employee roles.</p>
+          <p class="muted">End to end: architecture, backend, frontend, infrastructure and ongoing production support.</p>
+          <a href="https://sarntech.in" target="_blank" rel="noopener" class="btn btn-primary cs-cta">Visit live site <i class="fas fa-arrow-up-right-from-square"></i></a>
+        </div>
+        <dl class="cs-facts">
+          <div><dt>Role</dt><dd>Full-stack / solo engineer</dd></div>
+          <div><dt>Status</dt><dd>Live in production</dd></div>
+          <div><dt>Services</dt><dd>3 Cloud Run microservices</dd></div>
+          <div><dt>Core workflow</dt><dd>13k+ records</dd></div>
+          <div><dt>Users</dt><dd>40+ accounts, 3 roles</dd></div>
+          <div><dt>Backend</dt><dd>18k lines, one service</dd></div>
+          <div><dt>Live at</dt><dd><a href="https://sarntech.in" target="_blank" rel="noopener">sarntech.in</a></dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-sec">
+    <div class="cs-wrap">
+      <h2><small>02</small>Technical stack</h2>
+      <div class="cs-grid c3">
+        <div class="cs-card">
+          <h3 class="stack-h">Frontend</h3>
+          <div class="cs-tags"><span>React 18</span><span>Vite</span><span>React Router</span><span>Axios</span></div>
+        </div>
+        <div class="cs-card">
+          <h3 class="stack-h">Backend</h3>
+          <div class="cs-tags"><span>Node.js</span><span>Express</span><span>JWT auth</span><span>bcrypt</span><span>node-cron</span></div>
+        </div>
+        <div class="cs-card">
+          <h3 class="stack-h">Data &amp; storage</h3>
+          <div class="cs-tags"><span>Firestore</span><span>Firebase Admin SDK</span><span>Google Drive API</span></div>
+        </div>
+        <div class="cs-card">
+          <h3 class="stack-h">Infra &amp; delivery</h3>
+          <div class="cs-tags"><span>Cloud Run</span><span>Docker</span><span>Firebase Hosting</span><span>Cloud Logging</span></div>
+        </div>
+        <div class="cs-card">
+          <h3 class="stack-h">Documents</h3>
+          <div class="cs-tags"><span>pdf-lib</span><span>pdfkit</span><span>pdfjs-dist</span><span>pdf-parse</span><span>ExcelJS</span><span>xlsx</span></div>
+        </div>
+        <div class="cs-card">
+          <h3 class="stack-h">Other services</h3>
+          <div class="cs-tags"><span>Groq LLM API</span><span>Nodemailer</span><span>Multer</span><span>rate-limit</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-sec">
+    <div class="cs-wrap">
+      <h2><small>03</small>API &amp; service integrations</h2>
+      <div class="cs-int">
+        <div><span class="ic ic-wide">DRIVE</span><div><h3>Document storage &amp; automated archival</h3><p>Multi-folder integration (per-business archive and backup folders, reimbursement bills, medical certificates) with a scheduled sweep job that archives completed sheets to Drive once every record clears billing, then purges the live Firestore copies.</p></div></div>
+        <div><span class="ic ic-wide">GROQ</span><div><h3>LLM-assisted document parsing</h3><p>Groq-backed extraction used in the SDS intake pipeline for pulling structured chemical/product data out of uploaded PDFs.</p></div></div>
+        <div><span class="ic ic-wide">FIRESTORE</span><div><h3>System of record</h3><p>All workflow, HR and billing data. TTL in-memory caching layers on every hot read path brought Firestore read volume down from a millions-per-day trajectory to a sustainable baseline.</p></div></div>
+        <div><span class="ic ic-wide">MICRO</span><div><h3>sarn-pdf-tools and sarn-scanner</h3><p>Two companion Cloud Run services the main backend calls over HTTP for PDF utility operations and document scanning, kept independently deployable from the core API.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-sec">
+    <div class="cs-wrap">
+      <h2><small>04</small>Key functionality shipped</h2>
+      <div class="cs-grid c3">
+        <div class="cs-card"><div class="cs-kicker">Workflow engine</div><h3>Multi-pipeline document processing</h3><p>Three parallel workflows - SLA/SDS (Search, Supersede, Transcription, Billing), Data Queue and Batch - each with stage-based assignment, rework/report loops and billing-readiness gating.</p></div>
+        <div class="cs-card"><div class="cs-kicker">HR - Attendance</div><h3>Geofenced check-in + leave engine</h3><p>Self-service geofence check-in, admin overrides, half-day and hours-based Out of Office handling, and a monthly-accrual leave balance engine with per-type (SL/CL) breakdown and balance-aware payroll splitting.</p></div>
+        <div class="cs-card"><div class="cs-kicker">HR - Payroll</div><h3>Auto-generated payslips</h3><p>Computed from attendance and leave data and rendered onto the company's real letterhead PDF via a pdfkit + pdf-lib overlay pipeline, with single and consolidated multi-month downloads.</p></div>
+        <div class="cs-card"><div class="cs-kicker">Reporting</div><h3>Role-scoped dashboards &amp; exports</h3><p>Separate Admin / Super Admin report views with cron-refreshed snapshot caching (10:00 and 17:00 IST), bulk repository-number lookup, and styled Excel/PDF exports.</p></div>
+        <div class="cs-card"><div class="cs-kicker">Finance</div><h3>Reimbursement &amp; approval routing</h3><p>Multi-item voucher submissions with auto-numbered, FY-scoped voucher IDs, approval-time locking, and manager-based request routing between employees, admins and Super Admin.</p></div>
+        <div class="cs-card"><div class="cs-kicker">Platform</div><h3>Role-based access control</h3><p>SuperAdmin / Admin / User role tiers enforced at the route level (200+ API endpoints), with per-feature permission flags layered on top.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-sec">
+    <div class="cs-wrap">
+      <h2><small>05</small>Architecture</h2>
+      <pre class="cs-arch">React (Vite) ──► Firebase Hosting
+        │
+        ▼  HTTPS / JWT
+<b>sarn-backend</b>  (Node + Express, Cloud Run)
+   ├── Firestore            (system of record)
+   ├── Google Drive API     (archival, bills, certs)
+   ├── Groq API             (document parsing)
+   ├──► <b>sarn-pdf-tools</b>    (Cloud Run)
+   └──► <b>sarn-scanner</b>      (Cloud Run)</pre>
+    </div>
+  </section>
+
+  <section class="cs-sec" id="shots">
+    <div class="cs-wrap">
+      <h2><small>06</small>Product screens</h2>
+      <p class="cs-shots-note">Screens from the live platform, shown with demo data. Click a screen to enlarge it.</p>
+      <div class="slider" aria-roledescription="carousel" aria-label="Product screens">
+        <div class="slides">
+          <figure class="slide active" data-title="Secure sign-in" data-desc="Branded sign-in with User ID and password for every role.">
+            <img src="assets/screens/sarn-login.jpg" alt="Secure sign-in" />
+          </figure>
+          <figure class="slide" data-title="Super Admin dashboard" data-desc="Platform overview: users, admins, who is online, and quick access to every module.">
+            <img src="assets/screens/sarn-superadmin.jpg" alt="Super Admin dashboard" loading="lazy" />
+          </figure>
+          <figure class="slide" data-title="SDS workflow hub" data-desc="Admin home for the SDS pipeline: upload, references, assignment, workflow control, billing and reports.">
+            <img src="assets/screens/sarn-sds-dashboard.jpg" alt="SDS workflow hub" loading="lazy" />
+          </figure>
+          <figure class="slide" data-title="SDS monitoring dashboard" data-desc="Live reporting on workflow progress, completion, billing readiness and top performers.">
+            <img src="assets/screens/sarn-sds-reports.jpg" alt="SDS monitoring dashboard" loading="lazy" />
+          </figure>
+          <figure class="slide" data-title="Data Queue (DQ) workflow" data-desc="Upload, list, assign, track and bill Data Queue records.">
+            <img src="assets/screens/sarn-dq-dashboard.jpg" alt="Data Queue (DQ) workflow" loading="lazy" />
+          </figure>
+          <figure class="slide" data-title="DQ workflow control" data-desc="Track records by stage and force-advance stuck records to billing.">
+            <img src="assets/screens/sarn-dq-control.jpg" alt="DQ workflow control" loading="lazy" />
+          </figure>
+          <figure class="slide" data-title="Batch workflow" data-desc="Upload, assign, verify and bill batch records.">
+            <img src="assets/screens/sarn-batch-dashboard.jpg" alt="Batch workflow" loading="lazy" />
+          </figure>
+          <figure class="slide" data-title="Attendance" data-desc="Present, absent, leave, half-day and out of office, with geofenced self check-in and a monthly summary per employee.">
+            <img src="assets/screens/sarn-attendance.jpg" alt="Attendance" loading="lazy" />
+          </figure>
+          <figure class="slide" data-title="Leave management" data-desc="Leave register with approve, reject and cancel. Approved leave feeds payable days on the payslip.">
+            <img src="assets/screens/sarn-leave.jpg" alt="Leave management" loading="lazy" />
+          </figure>
+          <figure class="slide" data-title="Payslip generator" data-desc="Generate, edit, finalize and publish monthly payslips, with an Excel register and Form 22.">
+            <img src="assets/screens/sarn-payslips.jpg" alt="Payslip generator" loading="lazy" />
+          </figure>
+          <figure class="slide" data-title="Reimbursements" data-desc="Approve and settle employee expense vouchers, with totals, exports and status tracking.">
+            <img src="assets/screens/sarn-reimbursements.jpg" alt="Reimbursements" loading="lazy" />
+          </figure>
+          <figure class="slide" data-title="Team structure" data-desc="Assign each employee to the admin who approves their leave and out-of-office requests.">
+            <img src="assets/screens/sarn-team.jpg" alt="Team structure" loading="lazy" />
+          </figure>
+          <figure class="slide" data-title="Employee profiles" data-desc="Master employee data that feeds leave, reimbursements, payslips and Form 22.">
+            <img src="assets/screens/sarn-employees.jpg" alt="Employee profiles" loading="lazy" />
+          </figure>
+        </div>
+        <div class="slide-caption"><b></b><span></span></div>
+        <div class="dots"><button class="dot active" aria-label="Show screen 1"></button><button class="dot" aria-label="Show screen 2"></button><button class="dot" aria-label="Show screen 3"></button><button class="dot" aria-label="Show screen 4"></button><button class="dot" aria-label="Show screen 5"></button><button class="dot" aria-label="Show screen 6"></button><button class="dot" aria-label="Show screen 7"></button><button class="dot" aria-label="Show screen 8"></button><button class="dot" aria-label="Show screen 9"></button><button class="dot" aria-label="Show screen 10"></button><button class="dot" aria-label="Show screen 11"></button><button class="dot" aria-label="Show screen 12"></button><button class="dot" aria-label="Show screen 13"></button></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="cs-sec" style="border:0;text-align:center;color:var(--text-muted);font-size:0.85rem">
+    <a href="index.html#projects" class="btn btn-primary">&larr; Back to portfolio</a>
+  </footer>
+
+  <script>
+    (function () {
+      var hb = document.getElementById('hamburger'), nl = document.querySelector('.nav-links');
+      if (hb && nl) hb.addEventListener('click', function () { nl.classList.toggle('open'); });
+
+      var slider = document.querySelector('.slider');
+      var slides = [].slice.call(document.querySelectorAll('.slide'));
+      var dots = [].slice.call(document.querySelectorAll('.dot'));
+      var capB = document.querySelector('.slide-caption b'), capS = document.querySelector('.slide-caption span');
+      var idx = 0, timer = null, paused = false;
+      var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      function show(i) {
+        idx = (i + slides.length) % slides.length;
+        slides.forEach(function (s, n) { s.classList.toggle('active', n === idx); });
+        dots.forEach(function (d, n) { d.classList.toggle('active', n === idx); });
+        capB.textContent = slides[idx].dataset.title;
+        capS.textContent = slides[idx].dataset.desc;
+      }
+      function start() { stop(); timer = setInterval(function () { if (!paused) show(idx + 1); }, 2000); }
+      function stop() { if (timer) clearInterval(timer); timer = null; }
+      dots.forEach(function (d, n) { d.addEventListener('click', function () { show(n); start(); }); });
+            show(0); start();
+
+      // Click to enlarge, with the description
+      var box = document.createElement('div');
+      box.className = 'lightbox';
+      box.innerHTML = '<figure><img alt="" /><figcaption><b></b><span></span></figcaption></figure><button aria-label="Close">&times;</button>';
+      document.body.appendChild(box);
+      var big = box.querySelector('img'), lb = box.querySelector('figcaption b'), ld = box.querySelector('figcaption span');
+      function openBox() {
+        var s = slides[idx];
+        big.src = s.querySelector('img').src; big.alt = s.querySelector('img').alt;
+        lb.textContent = s.dataset.title; ld.textContent = s.dataset.desc;
+        box.classList.add('open'); paused = true;
+      }
+      function closeBox() { box.classList.remove('open'); paused = false; }
+      slides.forEach(function (s) { s.addEventListener('click', openBox); });
+      box.addEventListener('click', closeBox);
+      document.addEventListener('keydown', function (ev) { if (ev.key === 'Escape') closeBox(); });
+    })();
+  </script>
+</body>
+</html>
