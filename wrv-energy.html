@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="assets/wrv-mark.png" />
+  <title>WRV Energy | Case Study - Samrudh G Rao</title>
+  <meta name="description" content="WRV Energy: multi-asset IoT monitoring platform and company website. Case study by Samrudh G Rao." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="case-study.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <nav class="navbar scrolled">
+    <a href="index.html" class="nav-logo">SGR</a>
+    <ul class="nav-links">
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="index.html#experience">Experience</a></li>
+      <li><a href="index.html#projects">Projects</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <div class="nav-social">
+      <a href="https://github.com/samrudhrao13" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/samrudh-rao-589159257/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu"><i class="fas fa-bars"></i></button>
+  </nav>
+
+  <header class="cs-hero">
+    <div class="cs-wrap cs-hero-inner">
+      <img src="assets/wrv-mark.png" alt="WRV Energy logo" class="cs-logo" />
+      <div>
+      <a href="index.html#projects" class="cs-back"><i class="fas fa-arrow-left"></i> Back to projects</a>
+      <div class="cs-eyebrow">Portfolio case study - Source | Monitor | Optimise</div>
+      <h1>WRV Energy: Multi-Asset IoT Monitoring Platform</h1>
+      <p>A platform that reads utility bills and equipment displays with OCR and an LLM, matches each scan to the right registered machine, and returns structured readings for human review. Includes the company's live website at wrvenergy.com.</p>
+      <div class="cs-chips">
+        <span>wrvenergy.com</span><span>FastAPI - Python</span><span>Next.js 14</span><span>Expo / React Native</span><span>Cloud Vision + Llama 3.3</span><span>Website live</span>
+      </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="cs-sec">
+    <div class="cs-wrap">
+      <h2><small>01</small>Overview</h2>
+      <div class="cs-overview">
+        <div>
+          <p>WRV Energy Systems Private Limited is an energy technology and supply chain partner based in Bengaluru, India. The platform lets organisations scan a document or equipment reading (an electricity bill, a UPS status panel, an HVAC display) and get structured data back automatically.</p>
+          <p class="muted"><b>The problem:</b> readings for meters, UPS units, HVAC and other equipment arrive as bills and display photos. The platform identifies which registered machine a scan belongs to from its printed serial, account or meter number, extracts fields with that machine's own template, and has a person review every value before it is saved.</p>
+          <a href="https://wrvenergy.com" target="_blank" rel="noopener" class="btn btn-primary cs-cta">Visit wrvenergy.com <i class="fas fa-arrow-up-right-from-square"></i></a>
+        </div>
+        <div>
+          <div class="cs-logo-tile"><img src="assets/wrv-logo-full.png" alt="WRV Energy full logo" /></div>
+          <dl class="cs-facts">
+            <div><dt>Role</dt><dd>Developer, hosting &amp; marketing</dd></div>
+            <div><dt>Timeline</dt><dd>Built in 1 month</dd></div>
+            <div><dt>Status</dt><dd>Website live</dd></div>
+            <div><dt>Asset classes</dt><dd>7</dd></div>
+            <div><dt>Batch scan</dt><dd>Up to 10 files</dd></div>
+            <div><dt>Live at</dt><dd><a href="https://wrvenergy.com" target="_blank" rel="noopener">wrvenergy.com</a></dd></div>
+          </dl>
+          <p class="cs-note">Only the website is public today. The login, portal, admin console and mobile app are built but not yet hosted publicly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-sec">
+    <div class="cs-wrap">
+      <h2><small>02</small>Technical stack</h2>
+      <div class="cs-grid c3">
+        <div class="cs-card">
+          <h3 class="stack-h">Backend</h3>
+          <div class="cs-tags"><span>Python</span><span>FastAPI</span><span>SQLAlchemy</span><span>SQLite</span><span>JWT (PyJWT, bcrypt)</span><span>httpx</span></div>
+        </div>
+        <div class="cs-card">
+          <h3 class="stack-h">Website &amp; web portal</h3>
+          <div class="cs-tags"><span>Next.js 14 (App Router)</span><span>TypeScript</span><span>Tailwind CSS</span><span>Recharts</span></div>
+        </div>
+        <div class="cs-card">
+          <h3 class="stack-h">Mobile app</h3>
+          <div class="cs-tags"><span>Expo / React Native (SDK 54)</span><span>TypeScript</span></div>
+        </div>
+        <div class="cs-card">
+          <h3 class="stack-h">OCR &amp; AI parsing</h3>
+          <div class="cs-tags"><span>Google Cloud Vision</span><span>Groq API</span><span>Llama 3.3 70B Versatile</span><span>PyMuPDF</span></div>
+        </div>
+        <div class="cs-card">
+          <h3 class="stack-h">Website services</h3>
+          <div class="cs-tags"><span>Formspree</span><span>Google Sheets (gviz)</span><span>Google Maps embed</span></div>
+        </div>
+        <div class="cs-card">
+          <h3 class="stack-h">Hosting &amp; SEO</h3>
+          <div class="cs-tags"><span>Firebase Hosting</span><span>Squarespace DNS</span><span>Google Workspace email</span><span>Search Console</span><span>sitemap + canonical tags</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-sec">
+    <div class="cs-wrap">
+      <h2><small>03</small>API integrations</h2>
+      <div class="cs-int">
+        <div><span class="ic ic-wide">VISION</span><div><h3>Google Cloud Vision</h3><p>Reads text from scanned documents (document text detection).</p></div></div>
+        <div><span class="ic ic-wide">GROQ</span><div><h3>Groq (Llama 3.3 70B)</h3><p>Turns the OCR text into structured fields using each machine's template.</p></div></div>
+        <div><span class="ic ic-wide">FORMSPREE</span><div><h3>Formspree</h3><p>Delivers contact-form messages, with front-end checks for a valid email and phone number before sending.</p></div></div>
+        <div><span class="ic ic-wide">SHEETS</span><div><h3>Google Sheets</h3><p>Powers the careers listings: roles are read live in the browser, so opening or closing one needs no code change.</p></div></div>
+        <div><span class="ic ic-wide">MAPS</span><div><h3>Google Maps</h3><p>Location card embedded on the contact section.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-sec">
+    <div class="cs-wrap">
+      <h2><small>04</small>Platform features</h2>
+      <div class="cs-grid c3">
+        <div class="cs-card"><div class="cs-kicker">Scanning</div><h3>Document &amp; reading scans</h3><p>Single scan or a batch of up to 10 files (PDF and images). PDFs are rendered at about 300 DPI, read with OCR, then parsed into fields.</p></div>
+        <div class="cs-card"><div class="cs-kicker">Matching</div><h3>Automatic machine matching</h3><p>Compares printed serial, account or meter numbers with registered machines. If a scan matches none or several, the user chooses.</p></div>
+        <div class="cs-card"><div class="cs-kicker">Templates</div><h3>Per-machine templates</h3><p>Reusable field schemas per machine model, with a chosen identifier field and optional extraction guidance.</p></div>
+        <div class="cs-card"><div class="cs-kicker">Review</div><h3>Human review before saving</h3><p>Every extracted value is editable and confidence-flagged. Missing fields come back empty and flagged, never made up.</p></div>
+        <div class="cs-card"><div class="cs-kicker">Access</div><h3>Multi-tenant roles</h3><p>Admin, client admin and technician roles. Each organisation's data is separate, and technicians only see machines they are granted. New logins go through an admin approval request.</p></div>
+        <div class="cs-card"><div class="cs-kicker">Assets</div><h3>Seven asset classes</h3><p>Energy Meters, HVAC Systems, UPS, Data Centre, Solar Inverters, DG Sets, and Pumps &amp; Motors.</p></div>
+        <div class="cs-card"><div class="cs-kicker">Analytics</div><h3>Readings &amp; analytics</h3><p>Reading history, per-machine trend charts, dashboards and CSV export.</p></div>
+        <div class="cs-card"><div class="cs-kicker">Reliability</div><h3>Built to fail gracefully</h3><p>Retries with backoff on temporary OCR and AI failures, upload limits, batch concurrency control and CORS configuration.</p></div>
+        <div class="cs-card"><div class="cs-kicker">Clients</div><h3>Web, admin and mobile</h3><p>A web portal and admin console, plus an Expo mobile app for quick scanning in the field.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-sec">
+    <div class="cs-wrap">
+      <h2><small>05</small>Public website (live)</h2>
+      <div class="cs-grid c3">
+        <div class="cs-card"><div class="cs-kicker">Website</div><h3>Marketing site</h3><p>Hero, approach, how it works, about, asset classes, role-based access, contact form and a map card.</p></div>
+        <div class="cs-card"><div class="cs-kicker">Careers</div><h3>Sheet-driven careers page</h3><p>Reads live job openings from a public Google Sheet, with no code changes needed to add or close a role.</p></div>
+        <div class="cs-card"><div class="cs-kicker">SEO &amp; pages</div><h3>Search-ready</h3><p>Terms, Privacy, a 404 page, robots.txt and a sitemap. Each page has a canonical URL and the site is registered in Google Search Console.</p></div>
+        <div class="cs-card"><div class="cs-kicker">Design</div><h3>Responsive and accessible motion</h3><p>Colour-coded sections, a header that highlights the current section on scroll, and animations that respect reduced-motion settings.</p></div>
+        <div class="cs-card"><div class="cs-kicker">Deploy</div><h3>Static export on Firebase</h3><p>A build script produces the website-only site, with the app routes switched off by one setting. Includes domain DNS, HTTPS and apex-to-www handling, with Google Workspace email kept intact.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-sec" id="shots" hidden>
+    <div class="cs-wrap">
+      <h2><small>06</small>Screenshots</h2>
+      <div class="cs-shots-grid">
+        <figure><img src="assets/screens/wrv-energy-1.png" alt="wrv-energy screenshot 1" /></figure>
+        <figure><img src="assets/screens/wrv-energy-2.png" alt="wrv-energy screenshot 2" /></figure>
+        <figure><img src="assets/screens/wrv-energy-3.png" alt="wrv-energy screenshot 3" /></figure>
+        <figure><img src="assets/screens/wrv-energy-4.png" alt="wrv-energy screenshot 4" /></figure>
+      </div>
+    </div>
+  </section>
+
+  <footer class="cs-sec" style="border:0;text-align:center;color:var(--text-muted);font-size:0.85rem">
+    <a href="index.html#projects" class="btn btn-primary">&larr; Back to portfolio</a>
+  </footer>
+
+  <script>
+    (function () {
+      var hb = document.getElementById('hamburger'), nl = document.querySelector('.nav-links');
+      if (hb && nl) hb.addEventListener('click', function () { nl.classList.toggle('open'); });
+      var sec = document.getElementById('shots');
+      if (!sec) return;
+      sec.querySelectorAll('figure').forEach(function (fig) {
+        var img = fig.querySelector('img');
+        img.addEventListener('load', function () { sec.hidden = false; });
+        img.addEventListener('error', function () { fig.remove(); });
+      });
+    })();
+  </script>
+</body>
+</html>
