@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="assets/sustain-ledger-icon.png" />
+  <title>Sustain Ledger Partners | Case Study - Samrudh G Rao</title>
+  <meta name="description" content="Sustain Ledger Partners: multi-tenant GST invoicing SaaS with a native Android app. Case study by Samrudh G Rao." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="case-study.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <nav class="navbar scrolled">
+    <a href="index.html" class="nav-logo">SGR</a>
+    <ul class="nav-links">
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="index.html#experience">Experience</a></li>
+      <li><a href="index.html#projects">Projects</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <div class="nav-social">
+      <a href="https://github.com/samrudhrao13" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/samrudh-rao-589159257/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu"><i class="fas fa-bars"></i></button>
+  </nav>
+
+  <header class="cs-hero">
+    <div class="cs-wrap cs-hero-inner">
+      <img src="assets/sustain-ledger-icon.png" alt="Sustain Ledger Partners logo" class="cs-logo" />
+      <div>
+      <a href="index.html#projects" class="cs-back"><i class="fas fa-arrow-left"></i> Back to projects</a>
+      <div class="cs-eyebrow">Portfolio case study - Product engineering</div>
+      <h1>Sustain Ledger Partners</h1>
+      <p>A multi-tenant GST invoicing platform built end to end: FastAPI backend, React web app and a Capacitor-wrapped Android app, deployed on Google Cloud as a shared SaaS for multiple independent companies.</p>
+      <div class="cs-chips">
+        <span>sustainledger.in</span><span>FastAPI - Python</span><span>React 18 - Vite</span><span>Firestore</span><span>Cloud Run</span><span>Capacitor / Android</span>
+      </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="cs-sec">
+    <div class="cs-wrap">
+      <h2><small>01</small>Overview</h2>
+      <div class="cs-overview">
+        <div>
+          <p>A GST-compliant invoicing SaaS for small and mid-size Indian businesses. One platform instance serves many independent companies from shared infrastructure, each with its own branded invoices, user accounts, customer/catalog data and Google Drive-backed document storage, isolated at the data layer and run from one superadmin console.</p>
+          <p class="muted">I designed and built the full stack solo: API design, data model, authentication, PDF generation, cross-platform delivery (web + native Android) and the GCP deployment pipeline, then operated it in production.</p>
+          <a href="https://sustainledger.in" target="_blank" rel="noopener" class="btn btn-primary cs-cta">Visit live site <i class="fas fa-arrow-up-right-from-square"></i></a>
+        </div>
+        <dl class="cs-facts">
+          <div><dt>Role</dt><dd>Full-stack / solo engineer</dd></div>
+          <div><dt>Status</dt><dd>Live in production</dd></div>
+          <div><dt>Tenancy</dt><dd>Multi-company, shared infra</dd></div>
+          <div><dt>API surface</dt><dd>56 REST endpoints</dd></div>
+          <div><dt>Platforms</dt><dd>Web + Android (native)</dd></div>
+          <div><dt>Hosting</dt><dd>GCP - Cloud Run + Firebase</dd></div>
+          <div><dt>Live at</dt><dd><a href="https://sustainledger.in" target="_blank" rel="noopener">sustainledger.in</a></dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-sec">
+    <div class="cs-wrap">
+      <h2><small>02</small>Technical stack</h2>
+      <div class="cs-grid c4">
+        <div class="cs-card">
+          <h3 class="stack-h">Backend</h3>
+          <ul>
+            <li><b>FastAPI</b><span>Python 3 / async</span></li>
+            <li><b>Pydantic</b><span>request/response schemas</span></li>
+            <li><b>Uvicorn</b><span>ASGI server</span></li>
+            <li><b>PyJWT + bcrypt</b><span>auth &amp; password hashing</span></li>
+            <li><b>ReportLab + Pillow</b><span>GST invoice PDF rendering</span></li>
+            <li><b>openpyxl</b><span>GST-claim Excel export</span></li>
+          </ul>
+        </div>
+        <div class="cs-card">
+          <h3 class="stack-h">Frontend - Web</h3>
+          <ul>
+            <li><b>React 18</b><span>UI</span></li>
+            <li><b>React Router 6</b><span>routing</span></li>
+            <li><b>Vite</b><span>build / dev server</span></li>
+            <li><b>pdf.js</b><span>in-app PDF preview</span></li>
+            <li><b>Fetch API</b><span>auth'd JSON + blob requests</span></li>
+          </ul>
+        </div>
+        <div class="cs-card">
+          <h3 class="stack-h">Mobile - Android</h3>
+          <ul>
+            <li><b>Capacitor 8</b><span>native wrapper</span></li>
+            <li><b>Filesystem / Share</b><span>native PDF save &amp; share</span></li>
+            <li><b>Secure Storage</b><span>Keystore-backed token store</span></li>
+            <li><b>Status Bar / Splash</b><span>native shell polish</span></li>
+            <li><b>Gradle signing</b><span>release APK/AAB pipeline</span></li>
+          </ul>
+        </div>
+        <div class="cs-card">
+          <h3 class="stack-h">Cloud &amp; data (GCP)</h3>
+          <ul>
+            <li><b>Cloud Run</b><span>containerized API</span></li>
+            <li><b>Firebase Hosting</b><span>web app + static assets</span></li>
+            <li><b>Firestore</b><span>primary multi-tenant DB</span></li>
+            <li><b>Google Drive API</b><span>per-company document storage</span></li>
+            <li><b>Cloud Scheduler</b><span>usage-snapshot cron jobs</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-sec">
+    <div class="cs-wrap">
+      <h2><small>03</small>API integrations</h2>
+      <div class="cs-int">
+        <div><span class="ic">GCF</span><div><h3>Google Cloud Firestore</h3><p>Primary datastore for companies, users, invoices, customers, catalog items, drafts, usage snapshots and platform billing, all namespaced per tenant.</p></div></div>
+        <div><span class="ic">GD</span><div><h3>Google Drive API (service account)</h3><p>Each company's generated invoices are archived to a Drive folder shared with the platform's service account, with per-company storage quotas enforced before generation.</p></div></div>
+        <div><span class="ic">@</span><div><h3>SMTP (Gmail)</h3><p>Invoice delivery by email from one sending mailbox with a per-company display name, configured live from the superadmin console and backed by Firestore settings.</p></div></div>
+        <div><span class="ic">WA</span><div><h3>Meta WhatsApp Cloud API</h3><p>Invoice delivery over WhatsApp using a pre-approved business-initiated message template, authenticated via a Cloud API access token and phone-number ID.</p></div></div>
+        <div><span class="ic">JWT</span><div><h3>Custom JWT auth</h3><p>Role-based session tokens (superadmin / company_admin / company_user) with a temp-password, forced-reset onboarding flow and an opt-in long-lived "remember me" session.</p></div></div>
+        <div><span class="ic">CR</span><div><h3>Cloud Scheduler to internal webhook</h3><p>Twice-daily, machine-triggered usage snapshot (Firestore doc counts/sizes plus Drive usage per company) for the superadmin billing dashboard, secret-gated against unauthenticated triggers.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-sec">
+    <div class="cs-wrap">
+      <h2><small>04</small>Key functions built</h2>
+      <div class="cs-grid c3">
+        <div class="cs-card"><h3>GST invoice generation</h3><p>Server-rendered PDF invoices with GST-compliant line items, tax breakdown and per-company branding; live preview before issuing.</p></div>
+        <div class="cs-card"><h3>Multi-tenant company management</h3><p>Superadmin console to onboard companies, set business type, storage quotas, contact details and Drive folder links.</p></div>
+        <div class="cs-card"><h3>Role-based staff accounts</h3><p>Superadmin, company admin and company user roles with scoped permissions and self-service password resets.</p></div>
+        <div class="cs-card"><h3>Customer &amp; catalog management</h3><p>Per-company customer directory and an item/service catalog with categories, reused across invoices.</p></div>
+        <div class="cs-card"><h3>Saved invoice drafts</h3><p>Any staff member can save and resume an in-progress invoice before it's finalized and numbered.</p></div>
+        <div class="cs-card"><h3>Sequential invoice numbering</h3><p>Financial-year-aware invoice counters with a next-number preview before submission.</p></div>
+        <div class="cs-card"><h3>GST-claim Excel export</h3><p>Filterable (date range, customer, staff member, financial year) spreadsheet export for GST return filing.</p></div>
+        <div class="cs-card"><h3>Invoice delivery</h3><p>One-click email or WhatsApp delivery of a finalized invoice directly to the customer.</p></div>
+        <div class="cs-card"><h3>Usage &amp; cost dashboard</h3><p>Superadmin view of per-company Firestore/Drive usage, configurable cost rates and generated platform cost reports.</p></div>
+        <div class="cs-card"><h3>Native Android app</h3><p>Capacitor-wrapped build with Keystore-backed token storage, native PDF share/save and an in-app update checker for sideloaded APK releases.</p></div>
+        <div class="cs-card"><h3>Offline-aware invoicing</h3><p>Network-failure detection distinguishes "offline" from a real validation error so in-progress invoices can be queued and retried.</p></div>
+        <div class="cs-card"><h3>Storage quota enforcement</h3><p>Per-company Drive storage ceilings block invoice generation gracefully once exceeded, pending a manual increase.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-sec" id="shots">
+    <div class="cs-wrap">
+      <h2><small>05</small>Product screens</h2>
+      <p class="cs-shots-note">Screens from the live product, shown with demo data. Click a screen to enlarge it.</p>
+      <div class="slider" aria-roledescription="carousel" aria-label="Product screens">
+        <div class="slides">
+          <figure class="slide active" data-title="Superadmin console" data-desc="Platform-wide overview: total companies and storage-quota alerts.">
+            <img src="assets/screens/sl-superadmin-dashboard.jpg" alt="Superadmin console" />
+          </figure>
+          <figure class="slide" data-title="Staff and customer login" data-desc="One sign-in for company staff and for customers of each company.">
+            <img src="assets/screens/sl-login.jpg" alt="Staff and customer login" loading="lazy" />
+          </figure>
+          <figure class="slide" data-title="Company dashboard" data-desc="Each company sees its own billing totals, invoice history, catalog and staff.">
+            <img src="assets/screens/sl-company-dashboard.jpg" alt="Company dashboard" loading="lazy" />
+          </figure>
+          <figure class="slide" data-title="New tax invoice" data-desc="Financial-year-aware invoice number, bill-to details, GSTIN, place of supply.">
+            <img src="assets/screens/sl-new-invoice.jpg" alt="New tax invoice" loading="lazy" />
+          </figure>
+          <figure class="slide" data-title="Customer lookup" data-desc="Type a few letters and pick a saved customer to auto-fill the invoice.">
+            <img src="assets/screens/sl-customer-autocomplete.jpg" alt="Customer lookup" loading="lazy" />
+          </figure>
+          <figure class="slide" data-title="Catalog picker" data-desc="Add items from the company's organised catalog, with HSN/SAC, rate and warranty.">
+            <img src="assets/screens/sl-catalog-picker.jpg" alt="Catalog picker" loading="lazy" />
+          </figure>
+          <figure class="slide" data-title="Invoice history" data-desc="Filter by financial year, user, date range or search, then export to Excel.">
+            <img src="assets/screens/sl-history.jpg" alt="Invoice history" loading="lazy" />
+          </figure>
+          <figure class="slide" data-title="Item and service catalog" data-desc="Categories and items set up once, reused on every invoice.">
+            <img src="assets/screens/sl-catalog.jpg" alt="Item and service catalog" loading="lazy" />
+          </figure>
+          <figure class="slide" data-title="Company users" data-desc="Staff accounts with auto-generated credentials, reset and deactivate.">
+            <img src="assets/screens/sl-users.jpg" alt="Company users" loading="lazy" />
+          </figure>
+          <figure class="slide" data-title="Company settings" data-desc="Company profile, logo, GST details and default CGST/SGST/IGST rates.">
+            <img src="assets/screens/sl-settings.jpg" alt="Company settings" loading="lazy" />
+          </figure>
+        </div>
+        <div class="slide-caption"><b></b><span></span></div>
+        <div class="dots"><button class="dot active" aria-label="Show screen 1"></button><button class="dot" aria-label="Show screen 2"></button><button class="dot" aria-label="Show screen 3"></button><button class="dot" aria-label="Show screen 4"></button><button class="dot" aria-label="Show screen 5"></button><button class="dot" aria-label="Show screen 6"></button><button class="dot" aria-label="Show screen 7"></button><button class="dot" aria-label="Show screen 8"></button><button class="dot" aria-label="Show screen 9"></button><button class="dot" aria-label="Show screen 10"></button></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="cs-sec" style="border:0;text-align:center;color:var(--text-muted);font-size:0.85rem">
+    <a href="index.html#projects" class="btn btn-primary">&larr; Back to portfolio</a>
+  </footer>
+
+  <script>
+    (function () {
+      var hb = document.getElementById('hamburger'), nl = document.querySelector('.nav-links');
+      if (hb && nl) hb.addEventListener('click', function () { nl.classList.toggle('open'); });
+
+      var slider = document.querySelector('.slider');
+      var slides = [].slice.call(document.querySelectorAll('.slide'));
+      var dots = [].slice.call(document.querySelectorAll('.dot'));
+      var capB = document.querySelector('.slide-caption b'), capS = document.querySelector('.slide-caption span');
+      var idx = 0, timer = null, paused = false;
+      var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      function show(i) {
+        idx = (i + slides.length) % slides.length;
+        slides.forEach(function (s, n) { s.classList.toggle('active', n === idx); });
+        dots.forEach(function (d, n) { d.classList.toggle('active', n === idx); });
+        capB.textContent = slides[idx].dataset.title;
+        capS.textContent = slides[idx].dataset.desc;
+      }
+      function start() { stop(); timer = setInterval(function () { if (!paused) show(idx + 1); }, 2000); }
+      function stop() { if (timer) clearInterval(timer); timer = null; }
+      dots.forEach(function (d, n) { d.addEventListener('click', function () { show(n); start(); }); });
+            show(0); start();
+
+      // Click to enlarge, with the description
+      var box = document.createElement('div');
+      box.className = 'lightbox';
+      box.innerHTML = '<figure><img alt="" /><figcaption><b></b><span></span></figcaption></figure><button aria-label="Close">&times;</button>';
+      document.body.appendChild(box);
+      var big = box.querySelector('img'), lb = box.querySelector('figcaption b'), ld = box.querySelector('figcaption span');
+      function openBox() {
+        var s = slides[idx];
+        big.src = s.querySelector('img').src; big.alt = s.querySelector('img').alt;
+        lb.textContent = s.dataset.title; ld.textContent = s.dataset.desc;
+        box.classList.add('open'); paused = true;
+      }
+      function closeBox() { box.classList.remove('open'); paused = false; }
+      slides.forEach(function (s) { s.addEventListener('click', openBox); });
+      box.addEventListener('click', closeBox);
+      document.addEventListener('keydown', function (ev) { if (ev.key === 'Escape') closeBox(); });
+    })();
+  </script>
+</body>
+</html>
